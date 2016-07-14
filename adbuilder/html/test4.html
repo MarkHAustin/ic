@@ -1,0 +1,47 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <RequestHeader xmlns="https://adwords.google.com/api/adwords/cm/v201605">
+      <clientCustomerId>...</clientCustomerId>
+      <developerToken>...</developerToken>
+      <userAgent>...</userAgent>
+    </RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <mutate xmlns="https://adwords.google.com/api/adwords/cm/v201605">
+      <operations>
+        <operator>ADD</operator>
+        <operand>
+          <adGroupId>XXXXX</adGroupId>
+            <ad xsi:type="TemplateAd">
+            <displayUrl>www.example.com/html5</displayUrl>
+            <finalUrls>http://example.com/html5</finalUrls>
+            <templateId>419</templateId>
+            <templateElements>
+              <uniqueName>adData</uniqueName>
+              <fields>
+                <name>Custom_layout</name>
+                <type>MEDIA_BUNDLE</type>
+                <fieldMedia xsi:type="MediaBundle">
+                  <type>MEDIA_BUNDLE</type>
+                  <data>INSERT_BASE_64_ENCODED_BYTES_FROM_ZIP_FILE_HERE</data>
+                  <entryPoint>carousel/index.html</entryPoint>
+                </fieldMedia>
+              </fields>
+              <fields>
+                <name>layout</name>
+                <type>ENUM</type>
+                <fieldText>Custom</fieldText>
+              </fields>
+            </templateElements>
+            <dimensions>
+              <width>300</width>
+              <height>250</height>
+            </dimensions>
+            <name>Ad for HTML5</name>
+          </ad>
+          <status>ENABLED</status>
+        </operand>
+      </operations>
+    </mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

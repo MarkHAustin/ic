@@ -1,0 +1,107 @@
+<style type="text/css">
+
+
+a:link {
+    text-decoration: none;
+	color: #0066ff;
+}
+
+a:visited {
+    text-decoration: none;
+	color: #0066ff;
+}
+
+a:hover {
+    text-decoration: none;
+	color: #0066ff;
+}
+
+a:active {
+    text-decoration: none;
+	color: #0066ff;
+
+}
+
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+
+
+input[type="password"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="password"]:focus {
+  outline: none;
+}
+
+.style-1 input[type="password"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="password"]:focus,
+.style-1 input[type="password"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+
+
+table.imagetable {
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #eeeeee;
+	border-collapse: collapse;
+}
+
+table.imagetable th {
+	background:#b5cfd2 url('img/cell-blue.jpg');
+	font-weight: normal;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #eeeeee;
+	font-size:12px;
+    font-family: Tahoma;
+}
+table.imagetable td {
+	background:#dcddc0 url('img/cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #eeeeee;
+	font-size:12px;
+    font-family: Tahoma;
+}
+</style>
